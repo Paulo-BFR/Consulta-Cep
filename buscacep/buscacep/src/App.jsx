@@ -9,7 +9,7 @@ function App() {
   const [input, setInput] = useState('');
   const [cep, setCep] = useState({});
 
-  async function handleSerach() {
+  async function handleSearch() {
 
     if (input === '') {
       alert("Insira o CEP!")
@@ -38,7 +38,7 @@ function App() {
           onChange={(e) => setInput(e.target.value)}
         />
 
-        <button className="buttonSearch" onClick={handleSerach}>
+        <button className="buttonSearch" onClick={handleSearch}>
           <FiSearch size={25} color="#rgba(255, 255, 255, 0.2)" />
         </button>
       </div>
